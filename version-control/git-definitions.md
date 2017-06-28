@@ -1,9 +1,9 @@
 # Git Definitions
 
-**Instructions: ** Define each of the following Git concepts.
+**Instructions: ** Define each of the following Git concepts. I am adding this line as a test because I messed something up. ^_^
 
 * What is version control?  Why is it useful?
-	1. Version control allows you to keep track of what features are being released, organizes your code, and tells you when specific items are pushed.
+	1. Version control allows you to keep track of what features are being released, organizes your code, and tells you when specific items are pushed. It is useful in tracking specific code and doing a rollback in the event of broken or harmful code being introduced to live. 
 * What is a branch and why would you use one?
 	1. A branch is a directory or folder that hosts your files. Usually, best practices call for having a master branch and a feature branch
 	in order to allow for version control and tracking features in specific release numbers.
