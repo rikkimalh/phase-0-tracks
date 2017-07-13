@@ -1,0 +1,32 @@
+section#contact-info p{
+	font-size: .8em;
+}
+
+section.job { 
+	background-color: #e9e5dc;
+	border-radius: 10px;
+	padding: 10px 0px 10px 25px;
+	margin: 3px 0px 3px 0px;
+ }
+
+/* 
+The 2em font-size will not be displayed as it conflicts with the .8em that is added later. This is important 
+as CSS tells us that while going down (cascading) through styling and applying each line, only the latest style that is 
+added will display to the end user. 
+*/
+
+ul.accomplishments {
+	font-size: 2em;
+}
+ul.accomplishments {
+	font-size: .8em;
+}
+
+/*Example of pseudoselector/pseudoclass */
+
+
+/*Example of selecting a child element inside another child element, aka Childception */
+
+ul li {
+	background-color: yellow;
+}
