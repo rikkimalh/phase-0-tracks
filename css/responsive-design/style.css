@@ -32,15 +32,36 @@ figcaption {
 }
 
 body { 
-  width: 960px;
+  max-width: 960px;
+  min-width: 500px;
+  margin: auto;
    }
 
 section#external-links {
-  width: 200px;
+  width: 28%;
   display: inline-block;
 }
 main {
-  width: 756px;
+  width: 70%;
   display: inline-block;
   vertical-align: top;
+}
+
+
+@media screen and (max-width: 430px) {
+    section#external-links {
+      font-size: 20px;
+      white-space: nowrap;
+    }
+    main {
+        display:block;
+      }
+    body {
+        font-size: 5vw;
+    }    
+}
+
+/*@media screen and (max-width: 500px) {
+  body {
+    background-color: hotpink; */
 }
