@@ -22,10 +22,16 @@ ul.accomplishments {
 	font-size: .8em;
 }
 
-/*Example of pseudoselector/pseudoclass */
+/* A pseudoselector or pseudo class is used to define a special state of an element. It adds a specific style to a
+specific group of elements. 
+Example of pseudoselector/pseudoclass */
+p:first-child {
+	background-color: orange;
 
+}
 
-/*Example of selecting a child element inside another element */
+/*Example of selecting a child element inside another element. This can be used to add styling to specific elements
+throughout the html layout */
 
 ul li {
 	background-color: yellow;
