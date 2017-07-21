@@ -1,0 +1,51 @@
+- Master submits elevator floor (numerical or letter value) to robot
+
+Robot 
+- Accept elevator floor value
+- Enter lobby (ground floor)
+- Hit elevator up or down button
+	- If submitted elevator floor is greater than 1, press up
+	- If submitted elevator floor is less than 1 or a letter, press down
+- Enter elevator and approach elevator button grid
+- Then performs:
+	- Scan of button layout by grid or table. 
+	- Numerical buttons and location
+	- Lettered buttons and location
+- Create grid layout of elevator buttons and numbers
+- Sort number and lettered buttons to complete grid and determine where destination button is
+- Search for submitted elevator floor button on actual grid
+- Upon finding destination, push button
+- Celebrate completion of task.
+
+
+My Algorithm: Making a sandwich
+
+- Go into kitchen
+- Open cabinet, take out bread
+	- If before run: use whole grain bread 
+	- if after run: use white bread
+- Take a plate out of cupbard
+- place bread on plate
+- Open fridge
+	- If craving sweet, take out peanut butter and jelly
+	- If feeling healthy, take out turkey, tomatoes and light mayonnaise
+- Place ingredients on counter next to sandwich
+- Get knife out
+- To build sandwich: 
+	- If feeling healthy: 
+		- Open whole grain bread bag, take out two slices
+		- Open mayonnaise, spread mayo on both slices
+		- Take out tomato and cut slices
+		- Open turkey container 
+		- Cut lettuce slices
+		- Alternate layers of turkey, lettuce and tomatoes until there are 3 layers of each on one slice.
+		- Put second slice of bread on top of layers. 
+	- If feeling sweet: 
+		- Open white bread bagk
+		- Take out two slices
+		- Open peanut butter and jelly jars
+		- Spread peanut butter on one slice
+		- Spread jelly on second slice
+		- Put both slices together
+- Cut sandwich in half
+- Eat and enjoy! 
