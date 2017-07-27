@@ -10,7 +10,7 @@
 #method returns decrypted value
 #Spaces will not count torward letters and will be a space
 
-def encrypt(x)
+def encrypt (x)
 	index = 0
 	while index < x.length
 		x[index] = x[index].next
