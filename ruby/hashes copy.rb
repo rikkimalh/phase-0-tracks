@@ -49,35 +49,27 @@ response = gets.chomp
 
 if 	
 	response == "name" 
-	puts "What would you like to change your name to?"
-	client_preferences.update({name: gets.chomp})
+	client_preferences.inject({name: gets.chomp})
 elsif 
 	response == "age"
-	puts "What would you like to change your age to?"
-	client_preferences.update({age: gets.chomp})
+	client_preferences.replace({age: gets.chomp})
 elsif 
 	response == "fav_color"
-	puts "What would you like to change your favorite color to?"
-	client_preferences.update({fav_color: gets.chomp})
+	client_preferences.replace({fav_color: gets.chomp})
 elsif 
 	response =="decor"
-	puts "What would you like to change your decor to?"
-	client_preferences.update({decor: gets.chomp})
+	client_preferences.replace({decor: gets.chomp})
 elsif 
 	response == "superhero"
-	puts "What would you like to change your favorite superhero to?"
-	client_preferences.update({superhero: gets.chomp})
+	client_preferences.replace({superhero: gets.chomp})
 elsif 
 	response == "chandeliers"
-	puts "What would you like to change your chandelier preference to?"
-	client_preferences.update({chandeliers: gets.chomp})
+	client_preferences.replace({chandeliers: gets.chomp})
 elsif 
 	response =="sandproof"
-	puts "What would you like to change your sandproof preference to?"
-	client_preferences.update({sandproof: gets.chomp})
-
+	client_preferences.replace({sandproof: gets.chomp})
 else puts "Thank you for your input."
 end 
 
-puts "Here is your information. Thank you."
+
 puts client_preferences
