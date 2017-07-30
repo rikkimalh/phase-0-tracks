@@ -36,4 +36,5 @@ translation.each do |fullname, codename|
 p "Your results:
 #{codename} is actually #{fullname} !!!"
 end 
+
 puts "Thanks for playing"
