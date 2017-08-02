@@ -1,7 +1,7 @@
 grades = [75, 80, 85, 90, 95, 100]
 
 p grades.bsearch {|grades| grades > 50}
-
+sort
 
 
 def fib(x)
