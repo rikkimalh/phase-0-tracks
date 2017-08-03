@@ -16,3 +16,16 @@
 #play dead
 #fetch
 #sit
+
+
+
+class Puppy
+
+  def fetch(toy)
+    puts "I brought back the #{toy}!"
+    toy
+  end
+
+end
+
+puts puppy

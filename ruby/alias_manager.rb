@@ -7,12 +7,18 @@
 #to enter a new name
 #program will end once the user hits exit
 #upon hitting exit, the user will be given the final results of their inputs, including the original entry. 
+def name(spyname)
+	
+	codename = spyname.each_char.next
+end
+
+p name("felicia torres")
+
 translation = {}
 
 loop do
 
 puts "Please enter your name. Enter quit when you are finished"
-
 
 fullname = gets.chomp
 break if 
@@ -28,7 +34,7 @@ codename = fullname.gsub(/./){|codename| codename.next}
 
 p "This is your codename: #{codename}."
 
-translation[fullname] = codename
+translation[:fullname] = codename
 
 end
 
