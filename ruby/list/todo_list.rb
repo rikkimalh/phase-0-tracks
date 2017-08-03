@@ -10,12 +10,13 @@ end
 
 def add_item(mop)
 	@list << mop
+end
 
+def delete_item(dishes)
+	@list.delete(dishes) 
 end
-def del_item
-	
-end
-def get_item
-	
+
+def get_item(print_dishes)
+  @list[0]
 end
 end
