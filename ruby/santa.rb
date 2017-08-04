@@ -9,7 +9,7 @@ class Santa
 		@ethnicity = ethnicity
 		@reindeer_ranking = ["Rudolph", "Dasher", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen"]
 			p "Initializing Santa Instance..."
-end
+	end
 
 	def speak
 			puts "Ho, Ho, Ho! Haaaaapy Holidays!"
@@ -36,7 +36,7 @@ end
 	def get_mad_at(bad_reindeer)
 		@reindeer_ranking.delete_if {|reindeer| reindeer == bad_reindeer}
 		@reindeer_ranking.insert(-1, bad_reindeer)
-			puts "#{bad_reindeer}"
+			puts "Santa got mad at #{bad_reindeer}. He's going to the back of the pack :("
 
 	end
 	
@@ -55,39 +55,32 @@ x = 100
 
 until santas.length ==  x 
 
-santa_gender = example_genders.sample 
-santa_ethnicity = example_ethnicities.sample
+	santa_gender = example_genders.sample 
+	santa_ethnicity = example_ethnicities.sample
 #Randomly set Santa age between 0 and 140
-santa_age = [*0..140].sample
+	santa_age = [*0..140].sample
 
 #Run program at least 100 times and display all data stored in array. 
 
-santas += [santa_gender, santa_ethnicity, santa_age]
+	santas += [santa_gender, santa_ethnicity, santa_age]
 
 
 p "Gender is #{santa_gender}"
 p "Ethnicity is #{santa_ethnicity}"
 p " Age is #{santa_age}"
 p "*******************"
+
 x += 1
 
 end
 
-
-
-
-
-
 santa = Santa.new("male", "Indian")
-
 santa.speak
 santa.eat_milk_and_cookies("chocolate chip")
 santa.age1(8)
 santa.celebrate_birthday
-santa.get_mad_at('Dasher')
-
+santa.get_mad_at('Rudolph')
 santa.gender = "Santa has turned into a dragon!"
 puts "#{santa.age}"
-
-puts "#{santa.gender}."
+puts "#{santa.gender}"
 
