@@ -42,6 +42,36 @@ end
 	
 end 
 
+#use array of example genders and example_ethnicities
+
+santas = []
+example_genders = ["agender", "female", "bigender", "male", "female", "gender fluid", "N/A"]
+example_ethnicities = ["black", "Latino", "white", "Japanese-African", "prefer not to say", "Mystical Creature (unicorn)", "N/A"]
+
+
+#create santas with randomly selected gender and ethnicity. 
+
+x = 100
+
+until santas.length ==  x 
+
+santa_gender = example_genders.sample 
+santa_ethnicity = example_ethnicities.sample
+#Randomly set Santa age between 0 and 140
+santa_age = [*0..140].sample
+
+#Run program at least 100 times and display all data stored in array. 
+
+santas += [santa_gender, santa_ethnicity, santa_age]
+
+
+p "Gender is #{santa_gender}"
+p "Ethnicity is #{santa_ethnicity}"
+p " Age is #{santa_age}"
+p "*******************"
+x += 1
+
+end
 
 
 
