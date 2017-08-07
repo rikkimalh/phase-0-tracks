@@ -45,7 +45,7 @@ class Hangman
 	def hidden_word
 		@hidden_word = @word
 		@hidden_word = @hidden_word.tr("abcdefghijklmnopqrstuvwxyz", "-")
-		p @hidden_word
+			p @hidden_word
 	end
 
 	def guess(letter)
@@ -62,7 +62,7 @@ class Hangman
 
 		elsif @word.include?(letter) 
 
-			@hidden_word.insert(@word.index(letter), letter)
+			@hidden_word.insert(@word.index(letter),letter)
 			@hidden_word[@word.index(letter)+1] = ''
 			@guess_tracker << letter
 			p @hidden_word
@@ -78,11 +78,11 @@ class Hangman
 end
 
 def start_game
-		puts "User 1: Please input a word. I hope no one is around you!"
-		input(gets.chomp.to_s)
-		system "clear"
-		hidden_word
-		puts "User 2, its time to play hangman! You hav #{@word.length} guesses left... Begin!"
+			puts "User 1: Please input a word. I hope no one is around you!"
+				input(gets.chomp.to_s)
+			system "clear"
+				hidden_word
+			puts "User 2, its time to play hangman! You hav #{@word.length} guesses left... Begin!"
 
 		until @num_guesses == (@word.length) do
 			guess(gets.chomp)

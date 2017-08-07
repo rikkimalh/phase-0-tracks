@@ -1,10 +1,11 @@
 
 require_relative 'hangman'
 
-describe hangman do 
+describe Hangman do 
 	let (:hangman){Hangman.new}
 
-	it "program start" do
-		expect().to eq ""
+	it "starts game" do
+		expect(hangman.start_game).to respond_with " "
+
 	end
 end
