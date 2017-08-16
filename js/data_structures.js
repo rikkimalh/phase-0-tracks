@@ -47,3 +47,7 @@ var anotherCar = new Car("Audi", 2017, "blue");
 console.log(anotherCar.name);
 console.log("The car is...");
 anotherCar.speed();
+
+
+// In order to loop through, you would use the 'for' method (as was used for assigning horses to colors)
+// 
