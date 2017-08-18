@@ -1,0 +1,26 @@
+1. 	select * from MLB_Players
+
+2. UPDATE MLB_Players
+	SET currently_injured = "false"
+	where ID = 10;
+
+3. select * from MLB_players
+inner join MLB_teams ON MLB_players.team_name = MLB_teams.name;
+
+3. select mlb_players.full_name, mlb_players.jersey_number, mlb_teams.name, mlb_teams.location
+from MLB_Players 
+
+inner join MLB_teams on MLB_players.team_name = MLB_teams.name;
+
+4. delete from MLB_Teams
+where MLB_teams.name = "Boston Red Sox";
+
+5. https://image.slidesharecdn.com/ooug3vst-131018130200-phpapp01/95/ooug-vst-visual-sql-tuning-diagrams-18-638.jpg?cb=1382101474
+
+
+6. select * from MLB_players left join MLB_teams on MLB_players.team_name= MLB_teams.name;
+
+select * from MLB_players cross join MLB_teams on MLB_players.team_name= MLB_teams.id;
+
+right join, and outer join(s) are not supported in sqlite
+
